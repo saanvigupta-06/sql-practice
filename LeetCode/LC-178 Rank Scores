@@ -1,0 +1,4 @@
+SELECT class from
+    (SELECT count(*) as students,class 
+    from Courses group by class )t
+WHERE students>=5
